@@ -1,0 +1,40 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/usr/src/app
+    networks:
+      - yolo_mynetwork
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/usr/src/app
+    environment:
+      - MONGODB_URI=mongodb://yolo-mongodb-1:27017/your-database-name
+    networks:
+      - yolo_mynetwork
+
+  yolo-mongodb-1:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - yolo_db_data:/data/db
+    networks:
+      - yolo_mynetwork
+
+networks:
+  yolo_mynetwork:
+
+volumes:
+  yolo_db_data:
