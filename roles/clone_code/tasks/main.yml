@@ -1,0 +1,5 @@
+- name: Clone code from GitHub
+  git:
+    repo: https://github.com/JanycKeller/yolo.git
+    dest: "/home/vagrant/yolo"
+    version: master

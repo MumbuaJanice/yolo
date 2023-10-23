@@ -1,0 +1,4 @@
+- name: Install npm packages for frontend
+  command: npm install
+  args:
+    chdir: "/home/vagrant/yolo/client"

@@ -1,0 +1,19 @@
+- name: Setup and Deploy Application
+  hosts: localhost
+  connection: local
+  become: true
+  gather_facts: no
+
+  vars:
+    app_path: "/home/vagrant/yolo"
+    dependencies:
+      - nodejs
+      - npm
+      - mongodb-org
+
+  roles:
+    - clone_code
+    - install_dependencies
+    - setup_frontend
+    - setup_backend
+    - restart_application
