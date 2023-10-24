@@ -1,6 +1,6 @@
 # Project YOLO
 
-This project aims to containerize and deploy an application using Docker, along with provisioning infrastructure using Terraform and configuring servers with Ansible.
+This project aims to containerize and deply an application using Docker, along with provisioning infrastructure using Terraform and configuring servers with Ansible.
 
 ## Requirements
 Make sure that you have the following installed:
