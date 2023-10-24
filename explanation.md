@@ -50,7 +50,7 @@ We used Docker Compose to manage the orchestration of our Docker containers. Doc
 
 - **Version**: We defned the version of Docker Compose to use in our project, which was '3' in this case.
 
-- **Services**: We defined the different services required for our application, such as frontend, backend, and MongoDB.
+- **Services**: We defined the diffrent services required for our application, such as frontend, backend, and MongoDB.
 
 - **Build and Ports**: We specified the build context, Dockerfile, and ports for each service.
 
