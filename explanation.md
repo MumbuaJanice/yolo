@@ -48,7 +48,7 @@ In this project, we successfully dockerized MongoDB as a database for our applic
 
 We used Docker Compose to manage the orchestration of our Docker containers. Docker Compose simplifies the process of starting and managing multi-container applications. Here are the key aspects:
 
-- **Version**: We defined the version of Docker Compose to use in our project, which was '3' in this case.
+- **Version**: We defned the version of Docker Compose to use in our project, which was '3' in this case.
 
 - **Services**: We defined the different services required for our application, such as frontend, backend, and MongoDB.
 
