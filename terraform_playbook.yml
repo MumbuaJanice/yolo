@@ -1,0 +1,8 @@
+- name: Provision Infrastructure with Terraform
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Run Terraform Script
+      command: terraform apply -auto-approve
+      args:
+        chdir: /home/vagrant/yolo/terraform_script_directory

@@ -1,26 +1,25 @@
-# Requirements
+# Project YOLO
+
+This project aims to containerize and deploy an application using Docker, along with provisioning infrastructure using Terraform and configuring servers with Ansible.
+
+## Requirements
 Make sure that you have the following installed:
-- [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
+- [Node.js](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
 - npm 
-- [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the mongodb service with `sudo service mongod start`
+- [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the MongoDB service with `sudo service mongod start`
 
-## Navigate to the Client Folder 
- `cd client`
+## Setup Instructions
+1. Clone the repository to your local machine.
+2. Navigate to the `client` folder and run `npm install` to install frontend dependencies.
+3. Start the frontend application using `npm start`.
+4. Open a new terminal, navigate to the `backend` folder, and run `npm install` to install backend dependencies.
+5. Start the backend application using `npm start`.
 
-## Run the folllowing command to install the dependencies 
- `npm install`
+## Terraform Implementation
+For the infrastructure setup, we utilized Terraform scripts to provision the required resources on the Google Cloud Platform (GCP). The scripts automate the creation of virtual machines and other necessary infrastructure components. For detailed information, refer to the `terraform/` directory.
 
-## Run the folllowing to start the app
- `npm start`
+## Ansible Configuration
+The application server setup and configuration were handled using Ansible playbooks. These playbooks triggered both resource provisioning using Terraform and server configuration using defined Ansible roles. For more details, see the `ansible/` directory.
 
-## Open a new terminal and run the same commands in the backend folder
- `cd ../backend`
-
- `npm install`
-
- `npm start`
-
- ### Go ahead a nd add a product (note that the price field only takes a numeric input)
-
-
- ![DockerHub Screenshot](yolo/screenshots)
+## Contributors
+- Janice Keller

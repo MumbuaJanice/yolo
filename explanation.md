@@ -70,3 +70,24 @@ We tagged our Docker images with version numbers using semantic versioning. Spec
 
 By completing these objectives, we successfully Dockerized our application and made it ready for deployment.
 
+
+
+## Objective 6: Terraform Implementation
+
+To automate the provisioning of the necessary infrastructure, we used Terraform scripts. These scripts were designed to set up virtual machines and other essential resources on the Google Cloud Platform (GCP). Here is an overview of the steps involved in the Terraform implementation:
+
+- **Resource Provisioning**: Utilized Terraform to provision virtual machines on GCP.
+- **Network Configuration**: Configured the networking components required for the application's operation.
+- **Security Setup**: Implemented security measures to ensure a robust and secure infrastructure.
+
+## Objective 7: Ansible Configuration
+
+For the server configuration and management, we employed Ansible playbooks. These playbooks triggered the provisioning of resources using Terraform and handled the server configuration using predefined Ansible roles. Here are the key aspects of our Ansible configuration:
+
+- **Playbook Execution**: Utilized an Ansible playbook to automate the configuration process.
+- **Roles and Tasks**: Defined specific roles and tasks within the playbook for different stages of the setup.
+- **Variable Usage**: Streamlined the configuration process by utilizing variables in the Ansible playbooks.
+
+## Contributors
+- Janice Keller
+
