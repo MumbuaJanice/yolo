@@ -12,8 +12,12 @@ spec:
       labels:
         app: frontend
     spec:
-      containers:
-      - name: frontend
-        image: your-frontend-image-tag:version
+  containers:
+    - name: frontend
+      image: janicemumbua/yolo-frontend:v1.0.0
+  imagePullSecrets:
+    - name: my-docker-secret
+
+
         ports:
         - containerPort: 3000
